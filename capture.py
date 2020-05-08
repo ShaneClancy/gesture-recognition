@@ -6,8 +6,6 @@ import numpy as np;
 
 import cv2 as cv;
 
-import random as rng;
-
 def removeBackground(image):
     if (np.max(image) != 0):
 
@@ -16,7 +14,6 @@ def removeBackground(image):
         image[image > 1500 + minVal] = 0
 
     return image
-
 
 def main():
     # Create a pipeline
